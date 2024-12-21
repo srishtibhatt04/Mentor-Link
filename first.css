@@ -1,0 +1,151 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(image/backgr.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a2325;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .center-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar .center-links a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .center-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar .create-account a {
+    color: white;
+    padding: 10px 20px;
+    background-color: #f56a6a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.navbar .create-account a:hover {
+    background-color: #ff4c4c;
+}
+
+/* Section layout styling */
+.middle-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 100px auto; /* Added margin to place it below the navbar */
+}
+
+/* Quote section */
+.quote {
+    flex: 1;
+    text-align: left;
+    font-size: 24px;
+    color:white;
+    margin-right: 20px;
+}
+
+/* Transparent box for mentorship message */
+.mentorship-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Making the page responsive */
+@media screen and (max-width: 768px) {
+    .middle-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quote {
+        margin-bottom: 20px;
+    }
+}
+
+  /* Styling for the lower section */
+  .lower-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+/* Mentor Images smaller and closer */
+.mentor-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /*margin: 0 1px; /* Small margin to bring images closer */
+}
+
+/* Mentor Images and Text Side by Side */
+.mentor-browse-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style the aside text next to images */
+aside {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px; /* Space between images and text */
+}
+
+
+/* Book Appointment Button */
+.book-appointment {
+    background-color: #f56a6a;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment:hover {
+    background-color: #ff4c4c;
+}
